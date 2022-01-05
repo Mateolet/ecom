@@ -60,3 +60,36 @@ main{
 .text-muted{
     color: white;
 }
+
+
+.centrado-columna{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#errorOculto{
+    width: 50%;
+    text-align: center;
+    height: 33px;
+    background-color: #f84e4e;
+    margin-bottom: 3%;
+    padding-top: 5px;
+    margin: auto auto 10% auto;
+    border-radius: 5%;
+    display: none;
+}
+
+#error{
+    width: 50%;
+    text-align: center;
+    height: 33px;
+    background-color: #f84e4e;
+    margin-bottom: 6%;
+    padding-top: 5px;
+    margin: auto auto 3% auto;
+    border-radius: 5%;
+    display: block;
+}

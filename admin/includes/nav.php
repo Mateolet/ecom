@@ -9,6 +9,7 @@
         <a class="py-2" href="adminTipos.php">Tipos</a>
         <a class="py-2" href="adminMarcas.php">Marcas</a>
         <a class="py-2" href="adminUsuarios.php">Usuarios</a>
+        <a class="py-2" href="adminConfig.php">Configuraciones</a>
 
   
   
