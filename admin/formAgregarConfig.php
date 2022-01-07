@@ -6,6 +6,7 @@
 
     <main class="container">
 
+
         <h1>Agregar Configuración</h1>
 
         <div class="alert bg-light p-4 col-8 mx-auto border shadow-sm">
@@ -46,6 +47,7 @@
     let estado = document.querySelector("#estadoCfg");
 
     let form = document.getElementById("formDatos");
+    
     form.addEventListener("submit",(e) => {
 
         if(estado.value > 2){
@@ -57,10 +59,8 @@
                 cartelError.id = "errorOculto";
             },3000)
             e.preventDefault();
-            
         }
-            
-        })
+    })
         
     
     

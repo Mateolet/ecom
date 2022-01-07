@@ -2,15 +2,13 @@
 
     require "funciones/conexion.php";
     require "funciones/configuraciones.php";
-    $resultados = listarConfig();
+    $resultados = listarUsuarios();
     include "includes/nav.php";
     include "includes/header.html";
 ?>
     <main class="container">
 
-    <h3>Panel de administracion de Configuraciones</h3>
-
-
+    <h3>Panel de administracion de Usuarios</h3>
 
     <table class="table table-bordered  table-hover">
 
@@ -18,7 +16,7 @@
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Estado</th>
+            <th scope="col">Email</th>
             <th scope="col" class="centrado-columna"> 
                 <a href="formAgregarConfig.php" class="btn btn-outline-success">Agregar</a>
             </th>

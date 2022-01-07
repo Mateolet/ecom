@@ -53,7 +53,7 @@
     let form = document.getElementById("formDatos");
     form.addEventListener("submit",(e) => {
 
-        if(estado.value > 2){
+        if(estado.value > 1){
             let cartelError = document.getElementById("errorOculto");
                 cartelError.id = "error";
     

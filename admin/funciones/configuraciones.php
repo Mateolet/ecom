@@ -51,6 +51,30 @@ function listarConfigPorID(){
 }
 
 
+function modificarConfig(){
+
+    $id = $_POST["id_config"];
+    $nombre = $_POST["nombreCfg"];
+    $estado = $_POST["estadoCfg"];
+
+    $link = conectar();
+
+
+    $sql = "UPDATE configuraciones 
+                    SET
+                    nombre = '".$nombre."',
+                    estado = ".$estado."
+                    WHERE id_config = $id";
+
+
+    $resultado = mysqli_query($link,$sql);
+
+
+    return $resultado;
+
+}
+
+
 function eliminarConfig(){
 
 

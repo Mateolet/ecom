@@ -12,7 +12,7 @@ body {
  * Custom translucent site header
  */
 .site-header {
-    background-color: rgba(198, 222, 237, 0.85);
+    background-color: rgba(31, 51, 63, 0.85);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -30,6 +30,7 @@ body {
 */
 main{
     margin-top: 30px;
+    padding-bottom: 5%;
 }
 
 .img50{
