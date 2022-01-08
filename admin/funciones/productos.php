@@ -21,9 +21,21 @@ function listarProductos(){
 function agregarProducto(){
 
 
-    $_POST["nombre"]
+   $nombre = $_POST["nombre"];
+   $precio = $_POST["precio"];
+   $sku = $_POST["sku"];
+   $stock = $_POST["stock"];
+   $descripcion = $_POST["descripcion"];
+   $id_categoria = $_POST["id_categoria"];
+   $id_marca = $_POST["id_marca"];
+   
+       $link = conectar();
 
-    $link = conectar();
+    $sql = "INSERT INTO productos (id_producto,nombre,precio,sku,stock,descripcion,id_categoria,id_marca) 
+            VALUES (DEFAULT,'".$nombre."',".$precio.",'".$sku."',".$stock.",'".$descripcion."',".$id_categoria.",".$id_marca.")";
 
-    $sql = "INSERT INTO productos (id_producto,nombre,precio,sku,descripcion,id_categoria,id_marca) VALUES ()"
+
+    $resultado = mysqli_query($link,$sql) or die(mysqli_error($link));
+
+    return $resultado;
 }
