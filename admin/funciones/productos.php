@@ -33,9 +33,11 @@ function agregarProducto(){
 
     $sql = "INSERT INTO productos (id_producto,nombre,precio,sku,stock,descripcion,id_categoria,id_marca) 
             VALUES (DEFAULT,'".$nombre."',".$precio.",'".$sku."',".$stock.",'".$descripcion."',".$id_categoria.",".$id_marca.")";
-
+    
 
     $resultado = mysqli_query($link,$sql) or die(mysqli_error($link));
 
+
     return $resultado;
 }
+
